@@ -1,8 +1,22 @@
-# Iniflex Project
 
-Iniflex is a Java application that demonstrates the use of object-oriented programming principles. The project includes classes for managing people and employees, showcasing inheritance and encapsulation.
+# 👩‍💻Projeto Iniflex
 
-## Project Structure
+O Iniflex é uma aplicação Java que demonstra o uso de princípios de programação orientada a objetos. O projeto inclui classes para gerenciar pessoas e funcionários, mostrando herança e encapsulamento.
+
+
+## Funcionalidades
+
+- Inserir todos os funcionários
+- Remover o funcionário “João” da lista
+- Imprimir todos os funcionários
+- Aumentar salário dos funcionários em 10%
+- Imprimir funcionários agrupados por função
+- Imprimir funcionários que fazem aniversário nos meses 10 e 12
+- Imprimir o funcionário com a maior idade
+- Imprimir funcionários por ordem alfabética
+- Imprimir o total dos salários dos funcionários
+- Imprimir quantos salários mínimos ganha cada funcionário
+## Estrutura do projeto
 
 ```
 iniflex
@@ -15,46 +29,22 @@ iniflex
 │   │   │           ├── Pessoa.java
 │   │   │           └── Funcionario.java
 │   │   └── resources
-│   └── test
-│       └── java
+|   |       └── funcionarios.csv
 ├── pom.xml
 └── README.md
 ```
+## Visão Geral das Classes
 
-## Classes Overview
+- *App.java*: O ponto de entrada principal da aplicação. Contém métodos para inserir usuários e gerenciar o fluxo da aplicação.
+- *Pessoa.java*: Representa uma pessoa com propriedades como nome e dataNascimento. Inclui métodos getter e setter para essas propriedades.
+- *Funcionario.java*: Estende a classe Pessoa para representar um funcionário. Adiciona propriedades como funcao e salario, juntamente com seus respectivos métodos getter e setter.
+## Tecnologias Utilizadas
 
-- **App.java**: The main entry point of the application. It contains methods to insert users and manage the application flow.
-- **Pessoa.java**: Represents a person with properties such as `nome` (name) and `idade` (age). It includes getter and setter methods for these properties.
-- **Funcionario.java**: Extends the `Pessoa` class to represent an employee. It adds properties like `cargo` (position) and `salario` (salary), along with their respective getter and setter methods.
+- *Java 1.8*: Linguagem de programação utilizada para desenvolver a aplicação.
+- *Maven*: Ferramenta de automação de compilação utilizada para gerenciar dependências e construir o projeto.
+## Dependências
 
-## Getting Started
+Este projeto utiliza o Maven para gerenciamento de dependências. Certifique-se de ter o Maven instalado em sua máquina para construir e executar o projeto.
+## Autor
 
-To set up and run the Iniflex project, follow these steps:
-
-1. **Clone the repository**:
-   ```
-   git clone <repository-url>
-   ```
-
-2. **Navigate to the project directory**:
-   ```
-   cd iniflex
-   ```
-
-3. **Build the project using Maven**:
-   ```
-   mvn clean install
-   ```
-
-4. **Run the application**:
-   ```
-   mvn exec:java -Dexec.mainClass="com.iniflex.App"
-   ```
-
-## Dependencies
-
-This project uses Maven for dependency management. Ensure you have Maven installed on your machine to build and run the project.
-
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for more details.
+Este projeto foi desenvolvido por Hanna Karoline Nascente.
