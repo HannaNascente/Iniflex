@@ -87,7 +87,7 @@ public class App {
         DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
         try (BufferedReader br = new BufferedReader(new InputStreamReader(App.class.getResourceAsStream(filePath), "UTF-8"))) {
             String line;
-            br.readLine(); // Skip header line
+            br.readLine();
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(",");
                 String nome = data[0];
