@@ -26,8 +26,12 @@ iniflex
 │   │   │   └── com
 │   │   │       └── iniflex
 │   │   │           ├── App.java
-│   │   │           ├── Pessoa.java
-│   │   │           └── Funcionario.java
+│   │   │           ├── model
+│   │   │           │   ├── Funcionario.java
+│   │   │           │   └── Pessoa.java
+│   │   │           └── service
+│   │   │               ├── FuncionarioService.java
+│   │   │               └── FuncionarioServiceImpl.java
 │   │   └── resources
 |   |       └── funcionarios.csv
 ├── pom.xml
@@ -35,9 +39,12 @@ iniflex
 ```
 ## Visão Geral das Classes
 
-- *App.java*: O ponto de entrada principal da aplicação. Contém métodos para inserir usuários e gerenciar o fluxo da aplicação.
-- *Pessoa.java*: Representa uma pessoa com propriedades como nome e dataNascimento. Inclui métodos getter e setter para essas propriedades.
-- *Funcionario.java*: Estende a classe Pessoa para representar um funcionário. Adiciona propriedades como funcao e salario, juntamente com seus respectivos métodos getter e setter.
+- *App.java*: O ponto de entrada principal da aplicação. Contém métodos para iniciar a aplicação e gerenciar o fluxo principal.
+- *Pessoa.java*: Representa uma pessoa com propriedades como nome e data de nascimento. Inclui métodos getter e setter para essas propriedades.
+- *Funcionario.java*: Estende a classe Pessoa para representar um funcionário. Adiciona propriedades como função e salário, juntamente com seus respectivos métodos getter e setter.
+- *FuncionarioService.java*: Interface que define os métodos para operações relacionadas aos funcionários.
+- *FuncionarioServiceImpl.java*: Implementação da interface FuncionarioService, contendo a lógica para gerenciar a lista de funcionários e realizar operações como inserção, remoção, aumento de salário, entre outras.
+
 ## Tecnologias Utilizadas
 
 - *Java 1.8*: Linguagem de programação utilizada para desenvolver a aplicação.

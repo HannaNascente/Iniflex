@@ -1,4 +1,4 @@
-package com.iniflex;
+package com.iniflex.model;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

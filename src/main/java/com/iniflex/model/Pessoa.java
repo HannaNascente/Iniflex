@@ -1,4 +1,4 @@
-package com.iniflex;
+package com.iniflex.model;
 
 import java.time.LocalDate;
 
